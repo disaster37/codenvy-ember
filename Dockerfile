@@ -1,6 +1,8 @@
 FROM eclipse/node
 MAINTAINER Sebastien Langoureaux <linuxworkgroup@hotmail.com>
 
+USER root
+
 # Install lib on global
 RUN npm install -g async watchman bower phantomjs-prebuilt ember-cli
 
